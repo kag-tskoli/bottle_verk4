@@ -33,4 +33,4 @@ def server_static(filename):
 def error404(error):
     return template('error404')
 
-run()
+run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
